@@ -1,3 +1,3 @@
-# Red Hat TY Blog Site
+# Red Hat Outreach Blog Site
 
-This is a repo that aims to teach Transition Year students some of the basics of Git via a jekyll/pages-hosted markdown site. It was created as part of the TY Programme in Red Hat Waterford.
+This repo and hosted blog site aims to provide students undertaking the Red Hat Outreach Git course an environment in which to practice the lessons learned.
