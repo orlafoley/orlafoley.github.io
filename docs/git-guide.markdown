@@ -10,9 +10,9 @@ The images are from an alternative repository but apart from the names everythin
 
 ---
 ## Setup
-   
+
 1. First, go to [The project repository](https://github.com/rh-outreach-blog/rh-outreach-blog.github.io).
-   
+  
 2. Look for the **"fork"** button in the top right section of the view. See the below image:
 ![fork button](/images/fork-button.png)
 
