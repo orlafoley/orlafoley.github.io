@@ -5,22 +5,53 @@ permalink: /git-guide/
 ---
 
 This guide will help you set up your GitHub to work on the Blog site.
-The images are from my own personal version of this repository but apart from the names everything should be the same.
+The images are from an alternative repository but apart from the names everything should be the same.
 
 
 ---
 ## Setup
-1. First you will need to set up a GitHub account. This will be carried out with our associates.
    
-2. Once your account is set up, go to [The project repository](https://github.com/rh-ty-blog/rh-ty-blog.github.io).
+1. First, go to [The project repository](https://github.com/rh-outreach-blog/rh-outreach-blog.github.io).
    
-3. Look for the **"fork"** button in the top right section of the view. See the below image:
+2. Look for the **"fork"** button in the top right section of the view. See the below image:
 ![fork button](/images/fork-button.png)
 
-4. Click this button then select an owner for your fork (your GitHub username should appear here) then click **"create fork"**.
+3. Click this button then select an owner for your fork (your GitHub username should appear here) then click **"create fork"**.
 
-5. Once you've created your fork, GitHub should take you directly to it. This should be identical to the project repo for now.
+4. Once you've created your fork, GitHub should take you directly to it. This should be identical to the project repo for now.
 
+5. Click the green **"code"** button and copy the HTTPS address.
+
+6. Within your terminal, navigate to whichever directory you store repositories in and enter:
+{% highlight bash %}
+git clone <THE_URL_YOU_COPIED>
+{% endhighlight %}
+
+7. Once this has completed, navigate to the newly created directory by entering:
+{% highlight bash %}
+cd <NAME_OF_YOUR_DIR>
+{% endhighlight %}
+
+8. Once you're in your repo's directory, let's check that our remote origin is set up correctly. Enter the following:
+{% highlight bash %}
+git remote show origin
+{% endhighlight %}
+
+9. The **"Fetch-URL"** and **"Push URL"** should be in the format:
+{% highlight bash %}
+Fetch URL: https://github.com/<YOUR_USERNAME>/rh-outreach-blog.github.io.git
+Push  URL: https://github.com/<YOUR_USERNAME>/rh-outreach-blog.github.io.git
+{% endhighlight %}
+
+10. If they aren't in this format you can update them using the following command:
+{% highlight bash %}
+git remote set-url <YOUR_REPO_URL>
+{% endhighlight %}
+
+11. In the IDE of your choice, open this project directory. If using VS code you can do this by navigating to the directory and entering:
+{% highlight bash %}
+code .
+{% endhighlight %}
 
 ---
 ## Making Changes
@@ -28,20 +59,75 @@ The images are from my own personal version of this repository but apart from th
 1. A good practice when working on your code is to sync your fork regularly. Clicking the button will tell you if your fork is after falling behind the main repo. If so, click **"update branch"** to bring it up to date with the main repo. See below image:
 ![update fork](/images/update-fork.png)
 
-2. To edit your blog, click on the folder labelled **"docs"** then the folder labelled **"_posts"** before finally clicking on the file with your name. It will have the format **"YYYY-DD-MM-yourname.markdown"**.
+2. Once you've synced your fork, you can pull any changes by using the command:
+{% highlight bash %}
+git pull
+# or if that doesn't work
+git pull origin main
+{% endhighlight %}
 
-3. When this file is open it should look similar to the below image. Click the button that looks like a pencil.
-![edit file](/images/edit-file.png)
+3. Now let's add a new blog page. To do this, navigate to **docs/_posts** within the project repo.
 
-4. When you've made your changes, click the green button in the top right labelled **"commit changes"**. Enter a commit message to help you track your changes.
+4. Let's create a branch for the changes we intend to make to the upsteam repo. Do this by entering:
+{% highlight bash %}
+git checkout -b <YOUR_BRANCH_NAME> # -b flag will create the branch prior to checkout
+{% endhighlight %}
+
+5. Within this directory, create a new file with the name format: **YYYY-MM-D-<ENTRY_TITLE>.markdown**. Note that it must be a current or past date.
+
+6. Next open the sample file **2024-11-4-sample_blog.markdown**, copy its contents and paste them into your new file.
+
+7. Update the section at the start of the file as seen below:
+{% highlight bash %}
+---
+layout: post # leave as is
+title:  "<NEW_BLOG_TITLE>" # add whatever title you'd like
+date:   <YYYY-MM-D> <HH:MM:SS> +0100 # update the date and time
+categories: jekyll update # leave as is
+---
+{% endhighlight %}
+
+8. Make whatever changes you like to the repo and save them within your IDE.
+
+9. Now lets add these changes to stage. In your integrated terminal enter:
+{% highlight bash %}
+git add .
+{% endhighlight %}
+
+10. Now that we've staged the changes, we can commit them:
+{% highlight bash %}
+git commit -m "<YOUR_COMMIT_MESSAGE>"
+{% endhighlight %}
+
+11. You can check if your commit was successful by entering:
+{% highlight bash %}
+git log
+{% endhighlight %}
+
+12. Once you've verified the presence of your commit, you can push it to your origin by entering:
+{% highlight bash %}
+git push origin <YOUR_BRANCH_NAME> # this will create a remote branch of the same name and push it
+{% endhighlight %}
 
 
 ---
 ## Opening a PR(Pull Request)
 
-5. You're now ready to submit your changes to the main repo. Return to main page of your fork (you can do this by clicking the name of the repo in the top left of the screen, next to your username). 
+1. The changes you've made should now be present in your remote branch. Check this by navigating to your repository on GitHub and click the branch button seen in the below screenshot.
+![branch button](/images/branch-icon.png)
 
-6. Next to the **"sync fork"** button we clicked earlier, you should see a **"contribute"** button. Click this and then **"open pull request"**. See the below image for reference.
-![contribute](/images/contribute.png)
+2. Verify that your remote branch contains the most recent commit.
+   
+3. In order to submit a PR we need to ensure our upsteam origin is set. Enter the following:
+{% highlight bash %}
+git remote add upstream https://github.com/rh-outreach-blog/rh-outreach-blog.github.io.git
+{% endhighlight %}
 
-1. Once you've added a comment and hit **"create pull request"**, your code is ready for review. Congratulations on your first PR!
+4. Now you can enter the following to create a PR:
+{% highlight bash %}
+gh pr create --base main --head <YOUR_USERNAME>:<BRANCH_NAME> --repo rh-outreach-blog/rh-outreach-blog.github.io --title "Your PR Title" --body "Your PR Description"
+{% endhighlight %}
+
+
+
+
