@@ -1,12 +1,19 @@
 ---
 layout: page
-title: Git Guide
-permalink: /git-guide/
+title: Exercise 2
+permalink: /git-guide-2/
 ---
 
-This guide will help you set up your GitHub to work on the Blog site.
-The images are from an alternative repository but apart from the names everything should be the same.
+This guide will allow you to put the learning from lessons 1 - 3 into practice. It will walk you through the process of:
 
+* Forking the site repository
+* Cloning it locally
+* Make changes to a local branch
+* Committing these changes
+* Pushing them to your remote fork
+* Submitting your first Pull Request
+
+While some repository names etc may be different in the images, the layouts etc should still be accurate.
 
 ---
 ## Setup
