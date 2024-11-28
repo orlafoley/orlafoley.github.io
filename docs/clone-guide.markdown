@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Site Creation Guide
+title: Site Guide
 permalink: /clone-guide/
 ---
 
