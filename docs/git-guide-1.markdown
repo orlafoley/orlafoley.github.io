@@ -135,6 +135,13 @@ While some repository names etc may be different in the images, the layouts etc 
     gh pr create --base main --head <YOUR_USERNAME>:<BRANCH_NAME> --repo rh-outreach-blog/rh-outreach-blog.github.io --title "Your PR Title" --body "Your PR Description"
     ```
 
+5. Once your PR has been created you can participate in the review process. Whenever you want to act on a suggestions, simply make the change in your local branch and then commit and push this to your remote branch via:
+    ``` bash
+    git push origin <YOUR_BRANCH_NAME> # this will update the code the reviewer can observe in the PR
+    ```
+
+6. Once the review process is complete you are able to merge to the main branch via the web UI. However, it's good practice to tidy up our commit history via rebasing. You can hold off on merging until we cover this in exercise 2.
+
 
 
 
