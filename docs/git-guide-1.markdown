@@ -68,8 +68,7 @@ While some repository names etc may be different in the images, the layouts etc 
 
 2. Once you've synced your fork, you can pull any changes by using the command:
     ``` bash
-    git pull
-    # or if that doesn't work
+    git pull # or if that doesn't work
     git pull origin main
     ```
 

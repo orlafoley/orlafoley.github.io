@@ -66,7 +66,7 @@ This exercise operates on the expectation that you have completed exercise 1, if
     ``` bash
     git checkout main
     ```
-10. You should obverve that the changes made in your branch are not reflected in main. Let's switch back to our test branch:
+10. You should observe that the changes made in your branch are not reflected in main. Let's switch back to our test branch:
     ``` bash
     git checkout exercise-2
     ```
@@ -88,6 +88,41 @@ This exercise operates on the expectation that you have completed exercise 1, if
     ``` bash
     git log
     ```
+It should resemble the following image:
+![git log](/images/git-log.png)
+
+2. Let's imagine we'd made several more changes for a review for example. Ideally, we would like to preserve a neat commit history when working on branches. Let's attempt to rebase to facilitate this.
+
+3. In the log, we can observe that it's the two most recent commits we want to adjust. Enter the following:
+    ``` bash
+    git rebase -i HEAD~2 # -i is the flag for "interactive" and "HEAD~2" specifies the 2 most recent commits on the HEAD
+    ```
+
+4.  This will open an interactive nano window within your terminal. It should resemble the below screenshot:
+![rebase](/images/rebase.png)
+The instructions within should be self explanatory but in this case we want to squash the second commit into the first one.
+
+5. Change the word **"pick"** next to the second commit to **"squash"**. You can also use single letters as outlined within the nano file. Use **ctrl+x** to save and then confirm to perform the rebase.
+
+6. You will then be presented with an additional nano view where you can see both commit messages. In this view, remove the second commit message and corresponding comment.
+
+7. Change the remaining commit message to: **"This is the combined commit"** and save.
+
+8. To verify the rebase run:
+    ``` bash
+    git log
+    ```
+
+9. The output should be similar to the below screenshot:
+![post rebase](/images/post-rebase.png)
+We've now successfully combined both commit and changed the message to reflect this.
+
+10. Finally, let's push these changes to a remote branch:
+    ``` bash
+    git push origin exercise-2 --force-with-lease # we don't need this here but normally would if the remote branch had commits
+    ```
+
+
 
 
 
