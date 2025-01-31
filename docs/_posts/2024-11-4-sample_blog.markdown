@@ -85,7 +85,7 @@ Pellentesque aliquam lobortis augue, ut pulvinar elit viverra non. Vivamus dapib
 ---
 
 
-![Red Hat Office](https://www.redhat.com/sysadmin/sites/default/files/styles/embed_large/public/2022-04/Script.png?itok=4fKgk6Gf "Red Hat Waterford")
+![Terminal](https://helpdeskgeek.com/wp-content/pictures/2023/01/preview-media-0-Title-Image.jpg "Terminal")
 
 **This is the text area where you can enter your blog details for Thursday**.
 
