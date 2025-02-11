@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Red Hat Outreach Blog
+title: Orla\u0027s Blog
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a blog site for use with the Red Hat Outreach Git course.
+  This is a blog site which does not like the use of special characters.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rh-outreach-blog.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://orlafoley.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  rh-outreach-blog
+github_username:  orlafoley
 
 # Build settings
 theme: minima
