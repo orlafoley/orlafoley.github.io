@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting Started"
-date:   2025-02-11 12:58:15 +0100
+date:   2025-02-11 09:58:15 +0100
 categories: jekyll update
 ---
 ## Getting Started
