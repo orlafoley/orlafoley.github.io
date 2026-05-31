@@ -1,3 +1,5 @@
-# Red Hat Outreach Blog Site
+# My Website
 
-This repo and hosted blog site aims to provide students undertaking the Red Hat Outreach Git course an environment in which to safely practice the lessons learned.
+This website is intended for me to upload various bits and 
+pieces of interest to me as I have the time. I hope to 
+upload hiking routes in the short term/
