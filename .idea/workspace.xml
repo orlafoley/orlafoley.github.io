@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b15217da-1aac-4b0f-84c6-7e1ec953f882" name="Changes" comment="Website title updated">
-      <change afterPath="$PROJECT_DIR$/main-FQS5IJBI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/fa-brands-400-LA6RBN2H.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/fa-regular-400-NCGHE5NP.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/fa-solid-900-EFITDVWS.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/fa-v4compatibility-4GXT74DT.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles-RX4QBNLE.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-ZYCC7NA7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prerendered-routes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles-AFMOPGF7.css" beforeDir="false" />
+    <list default="true" id="b15217da-1aac-4b0f-84c6-7e1ec953f882" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +54,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;update-angular-site&quot;,
     &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
@@ -120,7 +108,8 @@
       <workItem from="1790263667970" duration="103000" />
       <workItem from="1790690897835" duration="604000" />
       <workItem from="1790692141997" duration="1013000" />
-      <workItem from="1791143722630" duration="301000" />
+      <workItem from="1791143722630" duration="1210000" />
+      <workItem from="1791207850067" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="README.md updated with new website description">
       <option name="closed" value="true" />
